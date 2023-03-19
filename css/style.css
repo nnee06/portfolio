@@ -1,0 +1,637 @@
+@charset "utf-8";
+
+@import url(destyle.css);
+
+
+body{
+    background-color: #efe2d9;
+    font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+}
+
+h2{
+    font-family: "Georgia";
+    font-size: 48px;
+}
+@media screen and (max-width: 420px){
+    h2{
+        font-size: 24px;
+    }
+}
+h3{
+    font-family: "New Hero UltraLight";
+    font-size: 24px;
+    padding-left: 5px;
+}
+@media screen and (max-width: 420px){
+    h3{
+        font-size: 18px;
+    }
+}
+
+/* ヘッダー*/
+
+header{
+    font-family: "New Hero UltraLight";
+    font-size: 18px;
+    position: relative;
+}
+@media screen and (max-width: 420px){
+    header{
+        max-width: 420px;
+    }
+}
+
+.top-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin:0 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+@media screen and (max-width: 420px){
+    .top-box{
+        margin: 0;
+        padding: 20px;
+        font-size: 14px;
+        max-width: 420px;
+    }
+}
+
+span{
+    font-size: 10px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+}
+
+header ul li a{
+    margin: 0 1.5em;
+}
+
+#img1_sub {
+    display: none;
+}
+
+@media screen and (max-width:420px) {
+    #img1{
+        display: none;
+    }
+
+    #img1_sub{
+        display: block;
+        width: 420px;
+        height: auto;
+    }
+}
+
+#img2{
+    position: absolute;
+    top: 300px;
+    left: 550px;
+}
+@media screen and (max-width: 420px){
+    #img2{
+        max-width: 60%;
+        height: auto;
+        top: 150px;
+        left:100px;
+    }
+}
+
+/* About */
+#home-about{
+    margin: 140px 100px;
+}
+@media screen and (max-width: 420px){
+    #home-about{
+        max-width: 420px;
+        height: 560px;
+        margin: 0;
+    }
+}
+
+
+.self-phot{
+    margin: 50px;
+}
+@media screen and (max-width: 420px){
+    .self-phot{
+        position: absolute;
+        margin: 0;
+        padding: 40px 30px 30px 60px;
+        z-index: 20;
+    }
+    .self-phot img{
+        max-width: 100px;
+        height: 120px;
+        text-align: left;
+    }
+}
+
+.self-introduction{
+    display: flex;
+    justify-content: center
+}
+@media screen and (max-width: 420px){
+    .self-introduction{
+        display: block;
+        position: relative;
+    }
+}
+
+.about{
+    padding: 30px 30px 30px 0;
+}
+@media screen and (max-width: 420px){
+    .about{
+        text-align: right;
+        padding-right: 60px;
+    }
+}
+.self-introduction-box{
+    width: 600px;
+    padding: 50px 20px 20px 70px;
+    border: 1px;
+    background-color: #e6cdb9;
+}
+@media screen and (max-width: 420px){
+    .self-introduction-box{
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        max-width: 300px;
+        height: 380px;
+        padding: 20px;
+        margin: 40px 40px 90px 40px;
+        z-index: 10;
+    }
+}
+
+.text{
+    font-size: 15px;
+    font-family: "'游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif";
+    line-height: 2em;
+}
+@media screen and (max-width: 420px){
+    .text{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.self-introduction-box3{
+    padding: 40px 40px 20px 350px;
+    font-family: "New Hero UltraLight";
+    position: relative;
+}
+@media screen and (max-width: 420px){
+    .self-introduction-box3{
+        position: relative;
+        font-size: 10px;
+        padding: 20px 40px 20px 200px;
+    }
+}
+
+.self-introduction-box3 a::after{
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: .5s;
+  }
+  @media screen and (max-width: 420px){
+    .self-introduction-box3 a::after{
+        position: absolute;
+        bottom: 0;
+        left: 250px;
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: #ffffff;
+        transition: .5s;
+    }
+}
+
+.self-introduction-box3 a:hover::after{
+    width: 30%;
+  }
+
+/* Work */
+#home-work{
+    width: 1500px;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 420px){
+    #home-work{
+        max-width: 420px;
+        height: 2850px;
+    }
+}
+
+.text2{
+    padding: 50px 100px 20px 100px;
+    text-align: center;
+}
+
+.work-box{
+    padding: 0 240px 20px 240px;
+}
+@media screen and (max-width: 420px){
+    .work-box{
+        max-width: 420px;
+        padding: 0 50px;
+        margin: 0;
+    }
+}
+
+.row{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 420px){
+    .row{
+        max-width: 300px;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+}
+.hover-parent {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+@media screen and (max-width: 420px){
+    .hover-parent{
+        margin: 0;
+    }
+}
+.hover-mask {
+    width: 300px;
+    height: 300px;
+    font-family: "New Hero UltraLight";
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    opacity: 1;
+    transition:all 0.6s ease;
+}
+
+.hover-parent:hover .hover-mask {
+    background: #000000;
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+footer{
+    width: 1500px;
+    height: 100px;
+    background-color: #313131; 
+}
+@media screen and (max-width: 420px){
+    footer{
+        max-width: 420px;
+        height: 50px;
+    }
+}
+.small{
+    padding: 40px;
+    text-align: center;
+}
+@media screen and (max-width: 420px){
+    .small{
+        padding: 10px;
+    }
+}
+
+footer small{
+    font-size: 18px;
+    color: #ffffff;
+}
+@media screen and (max-width: 420px){
+    footer small{
+        font-size: 10px;
+    }
+}
+/*-------------------Aboutページ-------------------/*
+
+/*Profile*/
+#About-profile{
+    width: 1500px;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 420px){
+    #About-profile{
+        max-width: 420px;
+    }
+}
+
+#About-profile h2{
+    padding: 100px 100px 0 100px;
+    text-align: center;
+}
+.item{
+    display: flex;
+    padding: 50px 30px 30px 100px;
+}
+@media screen and (max-width: 420px){
+    .item{
+        padding: 20px 30px;
+    }
+}
+.item-square{
+    width: 0.5em;
+    height: 2em;
+    background-color: #d8c1b6;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 100px 70px;
+}
+@media screen and (max-width: 420px){
+    .introduction{
+        padding: 0 10px 40px 10px;
+    }
+}
+
+.introduction-box{
+    width: 600px;
+    border: 1px;
+    background-color: #e6cdb9;
+    padding: 10px;
+}
+@media screen and (max-width: 420px){
+    .introduction-box{
+        max-width: 350px;
+    }
+}
+.name{
+    padding: 20px;
+}
+
+#furigana{
+    font-family: "New Hero UltraLight";
+    font-size: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 420px){
+    #furigana{
+        font-size: 14px;
+    }
+}
+#name{
+    font-family: "'游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif";
+    font-size: 40px;
+    text-align: center;
+}
+@media screen and (max-width: 420px){
+    #name{
+        font-size: 25px;
+    }
+}
+.introduction-item{
+    font-size: 14px;
+    padding: 0 50px 0 50px;
+}
+@media screen and (max-width: 420px){
+    .introduction-item{
+        font-size: 12px;
+        padding: 0;
+    }
+}
+
+.item2{
+    padding: 0 50px;
+}
+@media screen and (max-width: 420px){
+    .item2{
+        padding: 10px 45px;
+    }
+}
+.item2 li{
+    padding: 5px;
+}
+@media screen and (max-width: 420px){
+    .item2 li{
+        padding: 0;
+    }
+}
+
+.introduction-item p{
+    padding: 20px;
+    line-height: 1.5em;
+}
+@media screen and (max-width: 420px){
+    .introduction-item p{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+.selfphot{
+    padding: 0 20px 20px 70px;
+}
+@media screen and (max-width: 420px){
+    .selfphot{
+        display: none;
+    }
+}
+
+/*skill*/
+#skill{
+    width: 1500px;
+}
+@media screen and (max-width: 420px){
+    #skill{
+        max-width: 420px;
+    }
+}
+
+.skill-img{
+    text-align: center;
+    padding: 10px 0 70px 0;
+}
+@media screen and (max-width: 420px){
+    .skill-img{
+        padding: 0px 0 40px 0;
+    }
+}
+@media screen and (max-width: 420px){
+    .skill-img img{
+        max-width: 300px;
+        height: auto;
+    }
+}
+/*career*/
+#career{
+    width: 1500px;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 420px){
+    #career{
+        max-width: 420px;
+        margin: 0;
+    }
+}
+.timeline{
+    display: flex;
+    justify-content: center;
+}   
+@media screen and (max-width: 420px){
+    .timeline {
+        max-width: 420px;
+    }
+
+}
+.timeline ul {
+        padding: 40px 0;
+}
+
+.timeline li{
+    display: flex;
+    width: 150%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+@media screen and (max-width: 420px){
+    .timeline li{
+        display: block;
+        font-size: 14px;
+        max-width: 420px;
+    }
+}
+
+
+.timeline-date{
+    width: 30%;
+    padding: 0 0 0 20px;
+}
+@media screen and (max-width: 420px){
+    .timeline-date{
+        padding: 0 0 10px 50px;
+        margin: 0;
+        font-size: 12px;
+        width: 50%;
+        float: left;
+        border: none;
+    }
+}
+.timeline-content {
+    position: relative;
+    width: 200%;
+    padding: 0 20px 60px 30px;
+    border-left: 1.5px solid #DDDDDD;
+}
+@media screen and (max-width: 420px){
+    .timeline-content{
+        max-width: 420px;
+        padding: 0 0 30px 50px;
+        font-size: 12px;
+        float: left;
+        border: none;
+        margin: 0;
+    }
+    .timeline-content p{
+        max-width: 420px;
+        padding: 0;
+        margin: 0;
+    }
+}
+                
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #d8c1b6;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 420px){
+    .timeline-content::before{
+        display: none;
+        margin: 0;
+    }
+}
+/*-------------------Workページ-------------------*/
+.title{
+    padding: 100px 100px 50px 100px;
+    text-align: center;
+    font-family:"'游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif"";
+}
+.work-img{
+    text-align: center;
+}
+
+.work-img img{
+    padding: 25px;
+}
+@media screen and (max-width: 420px){
+    .work-img img{
+       max-width: 70%;
+       height: auto;
+    }
+}
+.kakuu{
+    text-align: center;
+}
+.work-overview dl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 100px 150px 100px;
+    font-family: "'游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif";
+}
+@media screen and (max-width: 420px){
+    .work-overview dl{
+        justify-content: center;
+        padding: 20px;
+    }
+}
+.work-overview dt {
+    padding: 30px;
+    width: 25%;
+    font-size: 18px;
+    opacity: 0.5;
+  }
+  @media screen and (max-width: 420px){
+    .work-overview dt{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+  .work-overview dd {
+    padding-top: 30px;
+    width: 60%;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 420px){
+    .work-overview dd{
+        font-size: 12px;
+        padding-top: 14px;
+    }
+}
